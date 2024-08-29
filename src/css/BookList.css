@@ -1,0 +1,104 @@
+﻿.card {
+    border: 0;
+    width: 100%;
+}
+
+.bookItem {
+    box-shadow: -14px 0px 10px -9px rgba(0,0,0,0.7);
+    border-radius: 5px;
+    width: 100%;
+}
+.title {
+    font-family: "Lora", serif;
+    font-weight: bold;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: fill;
+    border-radius: 5px;
+}
+
+.imgContainer {
+    position: relative;
+    display: block;
+    width: 100%;  
+    border-radius: 5px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;  
+    border-radius: 5px;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.55);
+    overflow-wrap: break-word;
+}
+
+.imgContainer:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* .imgContainer:hover {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(0.3deg);}
+    25% {-webkit-transform: rotate(-0.3deg);}
+    50% {-webkit-transform: rotate(0.75deg);}
+    75% {-webkit-transform: rotate(-0.3deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+  
+  @-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(0.3deg);}
+    25% {-ms-transform: rotate(-0.3deg);}
+    50% {-ms-transform: rotate(0.75deg);}
+    75% {-ms-transform: rotate(-0.3deg);}
+    100% {-ms-transform: rotate(0deg);}
+  }
+  
+  @keyframes wiggle {
+    0% {transform: rotate(0.3deg);}
+    25% {transform: rotate(-0.3deg);}
+    50% {transform: rotate(0.75deg);}
+    75% {transform: rotate(-0.3deg);}
+    100% {transform: rotate(0deg);}
+  } */
+
+.bookTitle {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
